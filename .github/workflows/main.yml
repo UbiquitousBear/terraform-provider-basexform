@@ -25,7 +25,7 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
         id: import_gpg
       - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@f82d6c1c344bcacabba2c841718984797f664a6b # v4.2.0
+        uses: goreleaser/goreleaser-action@v6
         with:
           version: latest
           args: release --rm-dist
